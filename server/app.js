@@ -5,12 +5,12 @@ const cors = require("cors");
 const validator = require('validator');
 const jwt = require('jsonwebtoken');
 var cookieParser = require('cookie-parser')
-app.use(cookieParser())
 
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
+app.use(cookieParser())
 
 
 
